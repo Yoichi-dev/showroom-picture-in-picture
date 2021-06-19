@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "SHOWROOM Picture-in-Picture",
+    "description": "SHOWROOM配信映像をピクチャーインピクチャーで視聴、フルスクリーンで視聴できるようになります",
+    "version": "1.0.0",
+    "icons": {
+        "128": "img/i128.png",
+        "16": "img/i16.png",
+        "48": "img/i48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.showroom-live.com/*"
+            ],
+            "js": [
+                "js/jquery-3.6.0.min.js",
+                "js/hls.js",
+                "js/main.js"
+            ],
+            "css": [
+                "css/style.css"
+            ]
+        }
+    ]
+}
